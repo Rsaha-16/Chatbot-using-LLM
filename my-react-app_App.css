@@ -1,0 +1,207 @@
+.App {
+  text-align: center;
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.sidebar-left {
+  width: 300px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+.sidebar-right {
+  width: 400px; /* Adjust the width as needed */
+  background-color: #f4f4f4;
+  padding: 20px;
+  position:fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+
+.main-content {
+  flex: 1;
+  padding-left: 20px; /* Adjusted to accommodate the sidebar width */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.pdf-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pdf-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.pdf-name {
+  flex-grow: 1;
+  max-width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.btn-select {
+  margin-left: 10px;
+  background-color: #7fff4d;
+  color: rgb(7, 7, 7);
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-delete {
+  margin-left: 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-select:hover {
+  background-color: #36d97f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-delete:hover {
+  background-color: #d93636;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.file-input {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #0084b9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #884200;
+}
+
+.question-section input[type="text"] {
+  width: calc(100% - 70px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.question-input {
+  margin-top: 10px;
+}
+
+.question-section button {
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+.answer-section {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h2 {
+  margin-top: 40px;
+  color: #333;
+}
+
+.pdf-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pdf-list li {
+  margin-bottom: 10px;
+}
